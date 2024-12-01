@@ -14,7 +14,7 @@
 ### CNN+MLP
 
 ## You can train them all by using code below:
-**./run.sh
+./run.sh
 
 
 ## train_test result(wandb)
