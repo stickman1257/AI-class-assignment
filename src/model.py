@@ -22,7 +22,7 @@ class MLPModel(nn.Module):
             num_classes = 10
         elif dataset == 'flower':
             input_dim = 3 * 224 * 224 
-            num_classes = 102
+            num_classes = 5
         else:
             raise ValueError(f"지원하지 않는 데이터셋입니다: {dataset}")
             
@@ -98,7 +98,7 @@ class CNNModel(nn.Module):
             num_classes = 10
         elif dataset == 'flower':
             self.input_size = (224, 224)
-            num_classes = 102
+            num_classes = 5
         else:
             raise ValueError(f"지원하지 않는 데이터셋입니다: {dataset}")
             
@@ -191,7 +191,7 @@ class CNNWithClassifier(nn.Module):
             self.num_classes = 10
         elif dataset == 'flower':
             self.input_size = (224, 224)
-            self.num_classes = 102
+            self.num_classes = 5
         else:
             raise ValueError(f"지원하지 않는 데이터셋입니다: {dataset}")
             
@@ -261,7 +261,7 @@ class CNNWithClassifier(nn.Module):
                     kernel='rbf',
                     C=1.0,
                     gamma='auto',
-                    probability=True,
+                    probability=True,   
                     cache_size=2000,
                     class_weight='balanced',
                     decision_function_shape='ovr',
@@ -349,7 +349,7 @@ class CNNMLPModel(nn.Module):
             num_classes = 10
         elif dataset == 'flower':
             self.input_size = (224, 224)
-            num_classes = 102
+            num_classes = 5
         else:
             raise ValueError(f"지원하지 않는 데이터셋입니다: {dataset}")
         
