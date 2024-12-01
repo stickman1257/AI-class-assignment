@@ -14,4 +14,8 @@
 ### CNN+MLP
 
 ## You can train them all by using code below:
-*./run.sh
+**./run.sh
+
+
+## train_test result(wandb)
+https://wandb.ai/seungolego1257-samyook-university/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EA%B3%BC%EC%A0%9C/workspace
